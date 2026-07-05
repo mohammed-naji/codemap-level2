@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media print {
+      @page {
+        margin: 0;
+        /* Removes browser headers, footers, and title */
+      }
+
+      body {
+        padding: 1.5cm;
+        /* Restores spacing so content isn't cut off */
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-sky-100/80">
+
+  <div class="max-w-5xl mx-auto my-10 px-6 lg:px-0">
+    <div class="flex justify-between items-start">
+      <form class="flex flex-col gap-4">
+        <input type="text" class="border border-gray-300 px-4 py-1 rounded-sm bg-white shadow"
+          placeholder="Company Name">
+        <input type="text" class="border border-gray-300 px-4 py-1 rounded-sm bg-white shadow"
+          placeholder="Employee Name">
+        <input type="text" class="border border-gray-300 px-4 py-1 rounded-sm bg-white shadow"
+          placeholder="Company Phone Number">
+      </form>
+      <button
+        class="bg-sky-500 text-white shadow px-4 py-2 rounded duration-200 hover:bg-sky-600 cursor-pointer print print:hidden">Print</button>
+    </div>
+
+    <table class="bg-white w-full mt-10  rounded shadow">
+      <thead>
+        <tr>
+          <th class="text-start p-2 bg-sky-800 text-white">#</th>
+          <th class="text-start p-2 bg-sky-800 text-white">Name</th>
+          <th class="text-start p-2 bg-sky-800 text-white">Price</th>
+          <th class="text-start p-2 bg-sky-800 text-white">Quantity</th>
+          <th class="text-start p-2 bg-sky-800 text-white print:hidden"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-2">1</td>
+          <td class="p-2"><input type="text" class="border w-full p-2" placeholder="Name"></td>
+          <td class="p-2"><input type="text" class="border w-full p-2" placeholder="Quantity"></td>
+          <td class="p-2"><input type="text" class="border w-full p-2" placeholder="Price">
+          </td>
+          <td class="p-2 print:hidden"><button class="text-red-700 cursor-pointer delete">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-end mt-4">
+      <button
+        class="bg-sky-500 text-white shadow px-4 py-2 rounded duration-200 hover:bg-sky-600 cursor-pointer add print:hidden">+</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
