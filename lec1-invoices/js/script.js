@@ -26,8 +26,8 @@ tbody.onclick = (e) => {
 };
 
 function sortItems() {
-  counter = 1;
+  counter = 0;
   document.querySelectorAll("tbody tr").forEach((tr) => {
-    tr.querySelector("td:first-child").innerHTML = counter++;
+    tr.querySelector("td:first-child").innerHTML = ++counter;
   });
 }
