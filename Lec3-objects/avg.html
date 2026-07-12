@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVG Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="max-w-5xl mx-auto">
+    <form action="" class="flex flex-col gap-4 my-6 form-data">
+      <input type="text" class="border border-gray-400 rounded p-2 input-name" placeholder="Name" required>
+      <input type="number" max="100" class="border border-gray-400 rounded p-2 input-email" placeholder="Mark 1"
+        required>
+      <input type="number" max="100" class="border border-gray-400 rounded p-2 input-email" placeholder="Mark 2"
+        required>
+      <input type="number" max="100" class="border border-gray-400 rounded p-2 input-email" placeholder="Mark 3"
+        required>
+
+      <div>
+        <button type="button"
+          class="bg-amber-700 text-white p-2 px-4 rounded duration-200 hover:bg-amber-600 cursor-pointer add-mark">+</button>
+      </div>
+      <button
+        class="bg-cyan-700 text-white p-2 px-6 rounded duration-200 hover:bg-cyan-600 cursor-pointer calc-avg">Calculate</button>
+    </form>
+
+    <h1 class="text-7xl font-black text-center my-10 result"></h1>
+
+  </div>
+
+  <script src="js/avg.js"></script>
+</body>
+
+</html>
