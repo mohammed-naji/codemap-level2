@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.drop {
+  animation: drop 1s ease-in-out forwards;
+}
+
+@keyframes drop {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(100vh);
+  }
+
+  80% {
+    transform: translateY(90vh);
+  }
+
+  90% {
+    transform: translateY(100vh);
+  }
+
+  95% {
+    transform: translateY(95vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+
+}
