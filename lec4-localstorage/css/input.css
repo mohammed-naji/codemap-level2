@@ -3,33 +3,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .drop {
-  animation: drop 1s ease-in-out forwards;
+  animation: drop 2s ease-in-out forwards;
 }
 
 @keyframes drop {
-
   0% {
-    transform: translateY(0);
+    top: var(--start);
   }
 
   70% {
-    transform: translateY(100vh);
+    top: calc(100vh - 40px);
   }
 
   80% {
-    transform: translateY(90vh);
+    top: calc(100vh - 70px);
   }
 
   90% {
-    transform: translateY(100vh);
+    top: calc(100vh - 40px);
   }
 
   95% {
-    transform: translateY(95vh);
+    top: calc(100vh - 55px);
   }
 
   100% {
-    transform: translateY(100vh);
+    top: calc(100vh - 40px);
   }
-
 }
