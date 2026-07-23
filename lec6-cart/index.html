@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-teal-50/50">
+
+  <div class="max-w-6xl px-6 my-10 mx-auto">
+    <!-- <button class="bg-teal-500 px-2 py-1 rounded text-white duration-200 hover:bg-teal-600 cursor-pointer btn">Load
+      Data</button> -->
+
+    <div class="products gap-6 mt-10 grid md:grid-cols-2 lg:grid-cols-4">
+
+    </div>
+  </div>
+
+  <div
+    class="modal fixed opacity-0 invisible duration-200 top-0 left-0 w-full h-full bg-slate-700/70 backdrop-blur-[1px] flex justify-center items-center">
+    <div class="content bg-white w-1/2 p-6 rounded shadow">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <img class="main-img" src="https://placehold.co/400x300" alt="">
+          <div class="flex gallery gap-2 mt-2">
+
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Product Name</h2>
+          <strong>$100</strong>
+          <p class="text-slate-600 my-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus
+            quia illum, iusto labore hic,
+            totam deserunt repellat accusamus optio placeat. Asperiores magnam, molestias laborum aliquid distinctio aut
+            nobis vero.</p>
+          <div>
+            <input type="number" min="1" value="1" class="w-20 p-2 border border-slate-400 rounded"> <button
+              class="bg-teal-500 py-2 rounded text-white duration-200 px-10 hover:bg-teal-600 cursor-pointer">Add
+              To
+              Cart</button>
+            <button class="bg-transparent rounded border border-slate-400 p-2 px-3 cursor-pointer">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script
+    src="https://code.jquery.com/jquery-4.0.0.min.js">
+    </script> -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.18.1/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

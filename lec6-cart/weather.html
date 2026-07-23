@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-sky-100">
+
+  <div class="max-w-2xl mx-auto my-10">
+    <h1 class="text-3xl font-bold text-center mb-4">City Weather</h1>
+    <div class="relative">
+      <input type="text" placeholder="Search using city name" class="search-input border w-full p-2 rounded bg-white">
+      <i class="fas fa-spinner !hidden fa-spin absolute top-3 right-2"></i>
+    </div>
+
+    <div class="text-center">
+      <h3 class="text-4xl font-bold temp"></h3>
+      <img class="icon" src="" alt="">
+    </div>
+  </div>
+
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
