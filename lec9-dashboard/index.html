@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="max-w-7xl mx-auto px-6 my-6">
+    <h1 class="text-2xl font-semibold mb-6">Sales Dashboard</h1>
+
+    <div class="grid hidden count-cards md:grid-cols-2 gap-4 lg:grid-cols-4">
+      <div class="border bg-blue-100 shadow-xl p-6 text-center rounded">
+        <strong class="block text-4xl pcount">50</strong>
+        <small>Products</small>
+      </div>
+      <!-- snake_case_letter
+kebab-case-letter 
+camelCaseLetter
+PascalCaseLetter -->
+      <div class="border bg-red-100 shadow-xl p-6 text-center rounded">
+        <strong class="block text-4xl ccount">10</strong>
+        <small>Categories</small>
+      </div>
+
+      <div class="border bg-teal-100 shadow-xl p-6 text-center rounded">
+        <strong class="block text-4xl pavg">$1000</strong>
+        <small>Price AVG</small>
+      </div>
+
+      <div class="border bg-amber-100 shadow-xl p-6 text-center rounded">
+        <strong class="block text-4xl ravg">4.8</strong>
+        <small>Rate</small>
+      </div>
+    </div>
+
+    <div class="grid loading">
+      <div class="border bg-green-200 shadow-xl p-6 text-center rounded">
+        Loading Data..
+      </div>
+
+    </div>
+
+    <div class="grid mt-10 md:grid-cols-2 gap-4">
+      <div class="border shadow-xl rounded">
+        <div class="bg-gray-200 p-4">
+          Products Per Category
+        </div>
+        <div class="p-4">
+          <canvas id="categoryChart"></canvas>
+        </div>
+      </div>
+
+      <div class="border shadow-xl rounded">
+        <div class="bg-gray-200 p-4">
+          Most Rated Products
+        </div>
+        <div class="p-4">
+          <canvas id="topRatedChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
