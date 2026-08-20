@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.btn {
+  @apply flex items-center gap-2.5 bg-amber-500 text-white p-3 py-2 rounded active:scale-95 duration-300 hover:bg-amber-600 cursor-pointer
+}
