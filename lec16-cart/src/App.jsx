@@ -1,4 +1,4 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import Header from "./components/Header";
 import ProductsWrapper from "./components/ProductsWrapper";
 import CartProvider from "./context/CartProvider";
